@@ -34,7 +34,7 @@
     </div>
 
     <aside
-        class="space-y-8 pt-40 md:pt-0 fixed md:static bg-slate-100 dark:bg-slate-900 top-0 left-0 w-full md:w-40 h-screen md:h-auto p-8 md:p-0 z-40 -translate-x-full md:translate-x-0 opacity-0 md:opacity-100 transition shadow-2xl md:shadow-none"
+        class="space-y-8 pt-40 md:pt-0 fixed md:static bg-white dark:bg-slate-900 top-0 left-0 w-full md:w-40 h-screen md:h-auto p-8 md:p-0 z-40 -translate-x-full md:translate-x-0 opacity-0 md:opacity-100 transition shadow-2xl md:shadow-none"
         x-bind:class="{ 'translate-x-0': showSidebar, 'opacity-100': showSidebar }"
     >
         <a href="{{ url('/') }}" class="group focus:outline-0 focus:opacity-70">
