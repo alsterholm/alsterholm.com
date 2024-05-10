@@ -53,7 +53,7 @@ class Post
 
     public function preview()
     {
-        return str($this->body)->limit(150)->stripTags();
+        return str($this->body)->stripTags()->limit(250);
     }
 
     public function __get($key)
