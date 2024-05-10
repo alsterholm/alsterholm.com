@@ -20,6 +20,8 @@
             <div class="space-y-4">
                 <div class="text-slate-500 text-base">
                     Posted on <x-date>{{ $post->published_at }}</x-date>
+                    &centerdot;
+                    {{ $post->estimatedReadingTime() }} minute read
                 </div>
 
                 @if ($post->tags && count($post->tags) !== 0)

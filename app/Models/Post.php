@@ -56,6 +56,13 @@ class Post
         return str($this->body)->stripTags()->limit(250);
     }
 
+    public function estimatedReadingTime()
+    {
+        $wordsPerMinute = 200;
+
+        return max(1, round(str($this->body)->stripTags()->wordCount() / $wordsPerMinute));
+    }
+
     public function __get($key)
     {
         if ($this->frontmatter->{$key}) {
