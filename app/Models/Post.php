@@ -56,6 +56,16 @@ class Post
         return str($this->body)->stripTags()->limit(250);
     }
 
+    public function ogImageUrl()
+    {
+        [$year, $slug] = explode('/', $this->slug);
+
+        return route('blog.ogimage', [
+            'year' => $year,
+            'slug' => $slug,
+        ]);
+    }
+
     public function estimatedReadingTime()
     {
         $wordsPerMinute = 200;

@@ -12,7 +12,18 @@
     });
 ?>
 
-<x-layout.base>
+@push('head')
+    <meta property="og:title" content="{{ $post->title }}">
+    <meta property="og:description" content="{{ $post->preview() }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ $post->ogImageUrl() }}">
+    <meta property="og:url" content="{{ url('blog/'.$post->slug) }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@arcadianalpaca">
+    <meta name="twitter:title" content="{{ $post->title }}">
+@endpush
+
+<x-layout.base title="{{ $post->title }} - Andreas Alsterholm">
     <article class="space-y-6">
         <div>
             <x-heading>{{ $post->title }}</x-heading>
