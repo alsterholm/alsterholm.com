@@ -1,7 +1,7 @@
 <x-layout.base>
     <x-heading>Resume</x-heading>
 
-    <div class="space-y-8">
+    <div class="space-y-8 text-justify">
         <x-resume-list heading="Professional Experience">
             <x-resume-list.item role="Tech Lead" company="MyGizmo" start="2023">
                 Leading a team of four, developing a project management platform for the construction industry.

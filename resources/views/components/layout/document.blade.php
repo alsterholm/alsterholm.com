@@ -53,7 +53,7 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
-    <body class="font-['Zilla_Slab'] text-slate-950 dark:text-slate-100 antialiased bg-white dark:bg-slate-900 text-justify transition-colors">
+    <body class="font-['Zilla_Slab'] text-slate-950 dark:text-slate-100 antialiased bg-white dark:bg-slate-900 transition-colors">
         {{ $slot }}
     </body>
 </html>
