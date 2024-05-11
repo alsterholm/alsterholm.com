@@ -12,7 +12,7 @@
 
 <x-layout.base class="space-y-12">
     <div>
-        <x-heading>Books</x-heading>
+        <x-heading>Reading</x-heading>
 
         <div class="leading-loose text-slate-800 dark:text-slate-200 space-y-4">
             <p>

@@ -12,8 +12,8 @@
             Newsletter
         </x-nav.item>
 
-        <x-nav.item :href="url('/books')">
-            Books
+        <x-nav.item :href="url('/reading')">
+            Reading
         </x-nav.item>
 
         <x-nav.item :href="url('/resume')">

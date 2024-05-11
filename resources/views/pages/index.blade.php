@@ -23,7 +23,7 @@
             <p>
                 My name is Andreas, I'm a software engineer working as a tech lead for a Swedish company called
                 <x-link href="https://mygizmo.se" target="_blank">MyGizmo</x-link>. I'm passionate about Laravel,
-                Livewire, <x-link :href="url('/books')">fantasy novels</x-link> and a bunch of other things.
+                Livewire, <x-link :href="url('/reading')">fantasy novels</x-link> and a bunch of other things.
             </p>
 
             <p>
@@ -64,7 +64,7 @@
         @if ($currentBook)
             <x-books.current :book="$currentBook" />
 
-            <a href="{{ url('/books') }}" class="relative inline-block font-bold text-rose-600 dark:text-violet-400 hover:text-white group transition">
+            <a href="{{ url('/reading') }}" class="relative inline-block font-bold text-rose-600 dark:text-violet-400 hover:text-white group transition">
                 <div class="absolute z-10 h-full w-[110%] top-0 -left-[5%] bg-rose-600 dark:bg-violet-500 scale-x-0 group-hover:scale-x-100 transition origin-left"></div>
                 <div class="relative z-20 flex items-center space-x-2">
                     <div>View previously read books</div>
