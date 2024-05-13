@@ -35,18 +35,23 @@
                         <div>
                             <strong>Started:</strong>
                             <x-date>{{ $book->started_at }}</x-date>
-                            &centerdot;
-                            <strong>Expected to finish:</strong>
-                            <x-date>{{ $book->expectedFinishDate() }}</x-date>
-                            ({{ $book->started_at->diffInDays($book->expectedFinishDate()) }} days)
+
+                            @if ($book->current_page)
+                                &centerdot;
+                                <strong>Expected to finish:</strong>
+                                <x-date>{{ $book->expectedFinishDate() }}</x-date>
+                                ({{ $book->started_at->diffInDays($book->expectedFinishDate()) }} days)
+                            @endif
                         </div>
 
                         <div>
                             <strong>Word count:</strong>
                             <x-number>{{ $book->word_count }}</x-number>
-                            &centerdot;
-                            <strong>Pace:</strong>
-                            <x-number>{{ $book->wordsPerDay() }}</x-number> words per day
+                            @if ($book->current_page)
+                                &centerdot;
+                                <strong>Pace:</strong>
+                                <x-number>{{ $book->wordsPerDay() }}</x-number> words per day
+                            @endif
                         </div>
                     </div>
                 </div>
