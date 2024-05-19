@@ -14,7 +14,7 @@
             </div>
         </div>
     @else
-        <div class="py-4">
+        <div class="py-4 space-y-4">
             <div class="relative">
                 <input
                     type="email"
@@ -26,6 +26,12 @@
                 >
                 <div class="absolute z-10 -left-[1%] -top-[2%] w-[102%] h-[104%] bg-rose-400 dark:bg-violet-800 rotate-[1deg] peer-focus:rotate-[-0.5deg] transition"></div>
             </div>
+
+            @if (session('error'))
+                <p class="text-red-700 dark:text-red-400 font-semibold">
+                    Too many attempts - please try again later!
+                </p>
+            @endif
         </div>
 
         <div class="group relative inline-block">
