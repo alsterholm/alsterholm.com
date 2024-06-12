@@ -105,7 +105,7 @@ trait Deactivatable
         return $this->morphMany(Deactivation::class);
     }
 
-    public fucntion isDeactivated()
+    public function isDeactivated()
     {
         return $this->deactivations->exists();
     }
