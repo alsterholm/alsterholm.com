@@ -102,7 +102,7 @@ trait Deactivatable
 {
     public function deactivations()
     {
-        return $this->morphMany(Deactivation::class);
+        return $this->morphMany(Deactivation::class, 'deactivatable');
     }
 
     public function isDeactivated()
