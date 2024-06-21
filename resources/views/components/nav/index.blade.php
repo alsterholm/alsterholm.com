@@ -8,9 +8,9 @@
             Projects
         </x-nav.item>
 
-        <x-nav.item :href="url('/newsletter')">
-            Newsletter
-        </x-nav.item>
+        {{--<x-nav.item :href="url('/newsletter')">--}}
+        {{--    Newsletter--}}
+        {{--</x-nav.item>--}}
 
         <x-nav.item :href="url('/reading')">
             Reading
