@@ -40,7 +40,7 @@
 
     <div class="space-y-4">
         <x-heading.h2>
-            Previous books
+            Previously read
         </x-heading.h2>
 
         <div class="space-y-8">
