@@ -21,9 +21,9 @@
             </p>
 
             <p>
-                My name is Andreas, I'm a software engineer working as a tech lead for a Swedish company called
+                My name is Andreas, I'm a software engineer working as a tech lead for
                 <x-link href="https://mygizmo.se" target="_blank">MyGizmo</x-link>. I'm passionate about Laravel,
-                Livewire, <x-link :href="url('/reading')">fantasy novels</x-link> and a bunch of other things.
+                Livewire, <x-link :href="url('/reading')">books</x-link>, and a bunch of other things.
             </p>
 
             <p>
