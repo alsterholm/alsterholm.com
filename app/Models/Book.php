@@ -27,7 +27,7 @@ class Book
     public static function current()
     {
         return self::all()
-            ->first(fn (Book $book) => $book->isCurrentlyReading());
+            ->filter(fn (Book $book) => $book->isCurrentlyReading());
     }
 
     public static function finished()

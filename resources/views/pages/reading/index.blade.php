@@ -5,7 +5,7 @@
     use function Laravel\Folio\render;
 
     render(function (View $view) {
-        $view->with('currentBook', Book::current());
+        $view->with('currentBooks', Book::current());
         $view->with('books', Book::finished()->sortByDesc(fn (Book $book) => $book->started_at));
     });
 ?>
@@ -34,8 +34,8 @@
         </div>
     </div>
 
-    @if ($currentBook)
-        <x-books.current :book="$currentBook" />
+    @if ($currentBooks)
+        <x-books.current :books="$currentBooks" />
     @endif
 
     <div class="space-y-4">

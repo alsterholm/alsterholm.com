@@ -7,7 +7,7 @@
 
     render(function (View $view) {
         $view->with('latestBlogPost', Post::last());
-        $view->with('currentBook', Book::current());
+        $view->with('currentBooks', Book::current());
     });
 ?>
 
@@ -61,8 +61,8 @@
             </div>
         @endif
 
-        @if ($currentBook)
-            <x-books.current :book="$currentBook" />
+        @if ($currentBooks)
+            <x-books.current :books="$currentBooks" />
 
             <a href="{{ url('/reading') }}" class="relative inline-block font-bold text-rose-600 dark:text-violet-400 hover:text-white group transition">
                 <div class="absolute z-10 h-full w-[110%] top-0 -left-[5%] bg-rose-600 dark:bg-violet-500 scale-x-0 group-hover:scale-x-100 transition origin-left"></div>
